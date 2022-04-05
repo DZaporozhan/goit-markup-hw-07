@@ -1,0 +1,272 @@
+/* основной цвет заголовков #212121 */
+/* белый цвет #ffffff  */
+/* основной цвет текста #757575 */
+/* цвет акцента #2196F3 */
+/* черный цвет #000000  */
+/* цвет банера и футера #2F303A */
+/* цвет адресов футера rgba(255, 255, 255, 0.6) */
+/* вторичный цвет фона #F5F4FA */
+
+:root {
+  --title-text-color: #212121;
+  --main-text-color: #757575;
+  --accent-color: #2196f3;
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+  --main-logo-color: #2196f3;
+  --pf-cart-border-color: #eeeeee;
+  --address-link-footer: rgba(255, 255, 255, 0.6);
+  --btn-bg-color: #f5f4fa;
+  --btn-click-color: #188ce8;
+  --baner-tittle-color: #ffffff;
+  --white-color: #ffffff;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--title-text-color);
+  font-family: 'Roboto', ssans-serif;
+}
+
+button {
+  border: none;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  margin-top: -1px;
+}
+
+/* Header style */
+.logo {
+  text-decoration: none;
+  color: var(--main-logo-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo_head {
+  color: #000000;
+}
+
+.header_nav {
+  list-style: none;
+}
+
+.header_nav .link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.header_nav .link:hover,
+.header_nav .link:focus {
+  color: var(--accent-color);
+}
+
+.contact_list {
+  list-style: none;
+}
+
+.contact_list .link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.contact_list .link:hover,
+.contact_list .link:focus {
+  color: var(--accent-color);
+}
+
+/* Main style */
+
+/* Section Banner */
+.banner {
+  background-color: var(--footer-bg-color);
+}
+
+.banner .tittle {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--baner-tittle-color);
+}
+
+.banner .btn {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--baner-tittle-color);
+  cursor: pointer;
+}
+
+.banner .btn:active {
+  background-color: var(--btn-click-color);
+}
+
+/* Section Peculiarities */
+
+.pec_list {
+  list-style: none;
+}
+
+.pec_list .tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.pec_list .text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/* Section Our work */
+
+.our_work .tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our_work .list {
+  list-style: none;
+}
+
+/* Our Team Section */
+
+.our_team .tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.pers_cart {
+  list-style: none;
+}
+
+.pers_cart .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.pers_cart .prof {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+
+/* Footer style */
+
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.logo_footer {
+  color: var(--white-color);
+}
+
+.address .list {
+  list-style: none;
+}
+
+.address .text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.address .link {
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--address-link-footer);
+}
+
+/* Portfolio style  */
+
+.pf_filter {
+  list-style: none;
+}
+
+.pf_filter .btn {
+  background-color: var(--btn-bg-color);
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.pf_filter .btn:hover,
+.pf_filter .btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.pf_list {
+  list-style: none;
+}
+
+.pf_list .link {
+  text-decoration: none;
+}
+
+.pf_list .name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.pf_list .item {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
