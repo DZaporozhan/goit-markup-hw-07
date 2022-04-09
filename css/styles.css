@@ -23,6 +23,14 @@
   --white-color: #ffffff;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Остальной код */
+
 body {
   background-color: var(--main-bg-color);
   color: var(--title-text-color);
@@ -37,13 +45,29 @@ button {
   color: var(--accent-color);
 }
 
-.hidden {
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
   width: 1px;
   height: 1px;
   overflow: hidden;
+  border: 0;
   padding: 0;
-  opacity: 0;
-  margin-top: -1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Header style */
@@ -55,23 +79,41 @@ button {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 
 .logo_head {
   color: #000000;
 }
 
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
 .header_nav {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .header_nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+
   color: var(--title-text-color);
+}
+
+.header_nav .item + .item {
+  margin-left: 50px;
 }
 
 .header_nav .link:hover,
@@ -80,15 +122,27 @@ button {
 }
 
 .contact_list {
+  display: flex;
   list-style: none;
+  margin: 0 0 0 auto;
+  padding-left: 0;
+}
+
+.contact_list .item + .item {
+  margin-left: 50px;
 }
 
 .contact_list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+
   color: var(--main-text-color);
 }
 
@@ -104,7 +158,7 @@ button {
   background-color: var(--footer-bg-color);
 }
 
-.banner .tittle {
+.banner-tittle {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -112,9 +166,11 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--baner-tittle-color);
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
-.banner .btn {
+.banner-btn {
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -125,14 +181,21 @@ button {
   cursor: pointer;
 }
 
-.banner .btn:active {
+.banner-btn:active {
   background-color: var(--btn-click-color);
 }
 
 /* Section Peculiarities */
 
 .pec_list {
+  display: flex;
+
   list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.pec_list .item {
+  width: 270px;
 }
 
 .pec_list .tittle {
@@ -141,6 +204,8 @@ button {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .pec_list .text {
@@ -148,6 +213,7 @@ button {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin: 0;
 }
 
 /* Section Our work */
@@ -158,10 +224,14 @@ button {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .our_work .list {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 /* Our Team Section */
@@ -172,10 +242,14 @@ button {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .pers_cart {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .pers_cart .name {
@@ -183,12 +257,14 @@ button {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .pers_cart .prof {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin: 0;
 
   color: var(--main-text-color);
 }
@@ -197,14 +273,22 @@ button {
 
 .footer {
   background-color: var(--footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo_footer {
   color: var(--white-color);
 }
 
+.address {
+  margin-top: 20px;
+}
+
 .address .list {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .address .text {
@@ -213,6 +297,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-color);
+  margin: 0;
 }
 
 .address .link {
@@ -222,6 +307,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--address-link-footer);
+  margin: 0;
 }
 
 /* Portfolio style  */
