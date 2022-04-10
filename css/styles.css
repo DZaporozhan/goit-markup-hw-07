@@ -313,7 +313,16 @@ button {
 /* Portfolio style  */
 
 .pf_filter {
+  display: flex;
+  justify-content: center;
+
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.pf_filter .item + .item {
+  margin-left: 8px;
 }
 
 .pf_filter .btn {
@@ -335,24 +344,45 @@ button {
 }
 
 .pf_list {
+  display: flex;
+  flex-wrap: wrap;
+
   list-style: none;
+  margin-top: 0;
+  padding-left: 0;
 }
 
-.pf_list .link {
+.pf_cart {
+  text-align: center;
+}
+
+.pf_cart:nth-last-child(3n) {
+  margin-right: 30px;
+}
+
+.pf_cart:nth-last-child(-n + 3) {
+  margin-bottom: 30px;
+}
+
+.pf_cart .link {
   text-decoration: none;
 }
 
-.pf_list .name {
+.pf_cart .name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.pf_list .item {
+.pf_cart .products {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
