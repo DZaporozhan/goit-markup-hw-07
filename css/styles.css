@@ -146,7 +146,8 @@ img {
 }
 
 .contact_list .link {
-  display: block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -164,6 +165,20 @@ img {
   color: var(--accent-color);
 }
 
+.icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-mail:hover,
+.icon-mail:focus {
+  fill: currentColor;
+}
+
+.icon-phone {
+  margin-right: 10px;
+  fill: currentColor;
+}
 /*------------- Main style -------------*/
 
 /* -------------Section Banner------------- */
@@ -225,6 +240,23 @@ img {
 
 .pec_list .item + .item {
   margin-left: 30px;
+}
+
+.pec_box {
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+}
+.pec_icon {
+  width: 70px;
+  height: 70px;
+}
+.pec_box.antenna {
+  background-image: url(../images/antenna.svg);
 }
 
 .pec_list .tittle {
@@ -322,9 +354,64 @@ img {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  margin: 0;
+  margin-bottom: 16px;
 
   color: var(--main-text-color);
+}
+
+.pers_sociallink {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+.sociallink {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+}
+.pers_sociallink .sociallink + .sociallink {
+  margin-left: 10px;
+}
+.sociallink:hover,
+.sociallink:focus {
+  background-color: var(--accent-color);
+}
+.icon-social {
+  fill: #afb1b8;
+}
+.sociallink:hover .icon-social,
+.sociallink:focus .icon-social {
+  fill: #ffffff;
+}
+
+/* -----------Постоянные клиены ---------------*/
+
+.tittle.our_client {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.client_list {
+  display: flex;
+}
+.client_list .client_item + .client_item {
+  margin-left: 30px;
+}
+.client_item {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client_icon {
+  fill: #afb1b8;
 }
 
 /* -------------Footer style------------- */
