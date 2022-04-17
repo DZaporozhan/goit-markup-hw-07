@@ -29,7 +29,7 @@
   box-sizing: border-box;
 }
 
-/* Остальной код */
+/* -------------Остальной код------------- */
 
 body {
   background-color: var(--main-bg-color);
@@ -76,8 +76,8 @@ img {
   padding-bottom: 94px;
 }
 
-/* Header style */
-.container.head_line {
+/*------------- Header style------------- */
+.site_header {
   border-bottom: 1px solid #ececec;
 }
 .logo {
@@ -125,6 +125,10 @@ img {
   margin-left: 50px;
 }
 
+.link.accent_nav {
+  color: var(--accent-color);
+}
+
 .header_nav .link:hover,
 .header_nav .link:focus {
   color: var(--accent-color);
@@ -160,12 +164,14 @@ img {
   color: var(--accent-color);
 }
 
-/* Main style */
+/*------------- Main style -------------*/
 
-/* Section Banner */
+/* -------------Section Banner------------- */
 .banner {
   background-color: var(--footer-bg-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .banner-tittle {
@@ -201,8 +207,11 @@ img {
   background-color: var(--btn-click-color);
 }
 
-/* Section Peculiarities */
+/* -------------Section Peculiarities------------- */
 
+.peculiar {
+  padding-bottom: 0;
+}
 .pec_list {
   display: flex;
 
@@ -236,7 +245,7 @@ img {
   margin: 0;
 }
 
-/* Section Our work */
+/*------------- Section Our work -------------*/
 
 .work_tittle {
   font-weight: 700;
@@ -260,7 +269,7 @@ img {
   margin-left: 30px;
 }
 
-/* Our Team Section */
+/* -------------Our Team Section-------------- */
 .our_team {
   background-color: var(--secondary-bg-color);
 }
@@ -294,14 +303,11 @@ img {
   margin-left: 30px;
 }
 .pers_cart .photo {
-  margin-bottom: 30px;
 }
 
-.cart_text {
+.pers_cart .cart_text {
   padding-top: 30px;
-  padding-right: auto;
   padding-bottom: 30px;
-  padding-left: auto;
 }
 .pers_cart .name {
   font-weight: 500;
@@ -321,7 +327,7 @@ img {
   color: var(--main-text-color);
 }
 
-/* Footer style */
+/* -------------Footer style------------- */
 
 .footer {
   background-color: var(--footer-bg-color);
@@ -363,6 +369,10 @@ img {
   color: var(--address-link-footer);
 
   margin-top: 0;
+}
+
+.footer_contact:first-child {
+  margin-top: 0;
   margin-bottom: 9px;
 }
 
@@ -375,6 +385,7 @@ img {
   list-style: none;
   margin-top: 0;
   margin-bottom: 50px;
+  padding-left: 0;
 }
 
 .pf_filter .item + .item {
@@ -415,10 +426,17 @@ img {
 
 .pf_cart {
   width: 370px;
-  border: 1px solid var(--pf-cart-border-color);
-  box-sizing: border-box;
-  text-align: center;
   margin: 15px;
+}
+
+.cart_text {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 .pf_cart .link {
@@ -432,7 +450,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 4px;
 }
 
 .pf_cart .products {
