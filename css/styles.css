@@ -187,6 +187,14 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  min-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/banner.jpg);
+  background-repeat: no-repeat;
 }
 
 .banner-tittle {
@@ -404,14 +412,28 @@ img {
   margin-left: 30px;
 }
 .client_item {
-  display: block;
+  display: flex;
+  align-items: center;
+
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid;
+  border-color: #afb1b8;
   border-radius: 4px;
 }
+.client_link {
+  margin: auto;
+  padding: auto;
+  color: #afb1b8;
+}
 .client_icon {
-  fill: #afb1b8;
+  fill: currentColor;
+}
+
+.client_item:hover .client_link .client_icon,
+.client_item:focus .client_link .client_icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* -------------Footer style------------- */
@@ -420,6 +442,10 @@ img {
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer_box {
+  display: flex;
 }
 
 .logo_footer {
@@ -463,7 +489,46 @@ img {
   margin-bottom: 9px;
 }
 
-/* Portfolio style  */
+.ftr_text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.ftr_soclist {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.ftr_item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ftr_sociallink {
+  color: var(--white-color);
+}
+
+.ftr_socicon {
+  fill: currentColor;
+}
+
+.ftr_item:not(lastchild) {
+  margin-right: 10px;
+}
+
+.ftr_item:hover .ftr_socicon,
+.ftr_item:focus .ftr_socicon {
+  background-color: var(--accent-color);
+}
+/* -------------------Portfolio style --------------------- */
 
 .pf_filter {
   display: flex;
@@ -500,6 +565,8 @@ img {
 .pf_filter .btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .pf_list {
@@ -526,7 +593,7 @@ img {
   padding-left: 24px;
 }
 
-.pf_cart .link {
+.pf_cart .pf_link {
   text-decoration: none;
 }
 
@@ -547,4 +614,9 @@ img {
   color: var(--main-text-color);
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.pf_cart:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
