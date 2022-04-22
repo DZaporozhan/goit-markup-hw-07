@@ -361,29 +361,35 @@ img {
   margin-bottom: 10px;
 }
 
+.prof {
+}
 .pers_cart .prof {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
 
+  margin-top: 0;
+  margin-bottom: 16px;
   color: var(--main-text-color);
 }
 
 .pers_sociallink {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
   margin: 0;
   padding-left: 0;
   list-style: none;
 }
 .sociallink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  padding: 12px;
 }
 .pers_sociallink .sociallink + .sociallink {
   margin-left: 10px;
@@ -422,8 +428,6 @@ img {
 }
 .client_item {
   display: flex;
-  align-items: center;
-  justify-content: center;
 
   width: 170px;
   height: 92px;
@@ -432,16 +436,26 @@ img {
   border-radius: 4px;
 }
 .client_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
   color: #afb1b8;
 }
 .client_icon {
   fill: currentColor;
 }
 
-.client_item:hover .client_link .client_icon,
-.client_item:focus .client_link .client_icon {
-  fill: var(--accent-color);
+.client_item:hover,
+.client_item:focus {
   border-color: var(--accent-color);
+}
+
+.client_link:hover,
+.client_link:focus {
+  color: var(--accent-color);
 }
 
 /* -------------Footer style------------- */
@@ -498,6 +512,10 @@ img {
   margin-bottom: 9px;
 }
 
+.ftr_address {
+  margin-right: 70px;
+}
+
 .ftr_text {
   font-weight: 700;
   font-size: 14px;
@@ -517,6 +535,7 @@ img {
 }
 
 .ftr_item {
+  display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -536,8 +555,8 @@ img {
   margin-right: 10px;
 }
 
-.ftr_item:hover .ftr_socicon,
-.ftr_item:focus .ftr_socicon {
+.ftr_item:hover,
+.ftr_item:focus {
   background-color: var(--accent-color);
 }
 /* -------------------Portfolio style --------------------- */
@@ -628,7 +647,12 @@ img {
   margin-bottom: 0;
 }
 
-.pf_link:hover {
+.pf_link {
+  display: block;
+}
+
+.pf_link:hover,
+.pf_link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
