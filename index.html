@@ -65,7 +65,18 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="banner-btn">Заказать услугу</button>
+          <button type="button" class="banner-btn" data-modal-open>Заказать услугу</button>
+          <!-- -----------Backdrop------------------- -->
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea doloribus, ipsam
+                dignissimos reprehenderit laborum distinctio obcaecati nisi architecto sint dolorum
+                consequuntur atque expedita molestias accusamus minima accusantium fuga qui dolore.
+              </p>
+              <button type="button" data-modal-close>Закрыть</button>
+            </div>
+          </div>
         </div>
       </section>
       <!--  Преимущества -->
@@ -126,13 +137,22 @@
           <h2 class="work_tittle">Чем мы занимаемся</h2>
           <ul class="work_list">
             <li class="item">
-              <img src="images/box1.jpg" alt="Разработка" width="370" />
+              <div class="work_box">
+                <img src="images/box1.jpg" alt="Разработка" width="370" />
+                <div class="box_label"><p class="text">Десктопные приложения</p></div>
+              </div>
             </li>
             <li class="item">
-              <img src="images/box2.jpg" alt="Верстка" width="370" />
+              <div class="work_box">
+                <img src="images/box2.jpg" alt="Разработка" width="370" />
+                <div class="box_label"><p class="text">Мобильные приложения</p></div>
+              </div>
             </li>
             <li class="item">
-              <img src="images/box3.jpg" alt="Визуализация" width="370" />
+              <div class="work_box">
+                <img src="images/box3.jpg" alt="Разработка" width="370" />
+                <div class="box_label"><p class="text">Дизайнерские решения</p></div>
+              </div>
             </li>
           </ul>
         </div>
@@ -391,5 +411,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
