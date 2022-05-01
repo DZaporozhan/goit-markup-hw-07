@@ -105,14 +105,14 @@
                     rows="10"
                     placeholder="Введите текст"
                   ></textarea>
-                </div>
-
-                <div class="order_checkbox">
-                  <input type="checkbox" name="order_check" id="order_check" />
-                  <label for="order_check"
-                    >Соглашаюсь с рассылкой и ипринимаю<a href="">Условия договора</a>
-                  </label>
-                </div>
+                </div> 
+              
+                <label class="order_check">
+                  <input class="inp_checkbox" type="checkbox"/>
+                  <span class="icon_checkbox"></span>
+                  Соглашаюсь с рассылкой и ипринимаю <a class="link" href="#">Условия договора</a>
+                </label>
+                
                 <div class="order_btnbox">
                   <button type="submit" class="order_btn">Отправить</button>
                 </div>
@@ -453,8 +453,8 @@
         </div>
         <div class="item ftr_inmail">
           <p class="ftr_text">Подпишитесь на рассылку</p>
-          <form action="" class="ftr_form">
-            <input class="ftr_input" type="text" />
+          <form  class="ftr_form">
+            <input class="ftr_input" type="text" placeholder="E-mail"/>
             <button type="submit" class="ftr_inpbtn">Подписаться<svg class="ftr_btnsend" width="24" height="24" viewBox="0 0 24 24">
               <use href="./images/icons.svg#icon-send"></use></button>
             
