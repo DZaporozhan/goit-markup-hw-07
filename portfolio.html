@@ -23,31 +23,39 @@
   <body>
     <!-- Шапка -->
     <header class="site_header">
-      <div class="container">
-        <div class="site-nav">
-          <a href="./index.html" class="logo">Web<span class="logo_head">Studio</span></a>
-          <nav class="site-nav">
-            <ul class="header_nav">
-              <li class="item">
-                <a href="./index.html" class="link">Студия</a>
-              </li>
-              <li class="item">
-                <a href="./portfolio.html" class="link accent_nav liner">Портфолио</a>
-              </li>
-              <li class="item">
-                <a href="#" class="link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="contact_list">
+      <div class="container site-nav">
+        <a href="./index.html" class="logo">Web<span class="logo_head">Studio</span></a>
+        <nav class="site-nav">
+          <ul class="header_nav">
             <li class="item">
-              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+              <a href="./index.html" class="link accent_nav liner">Студия</a>
             </li>
             <li class="item">
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item">
+              <a href="#" class="link">Контакты</a>
             </li>
           </ul>
-        </div>
+        </nav>
+        <ul class="contact_list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="icon-mail" width="24" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <svg class="icon-phone" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- Портфолио -->
@@ -254,32 +262,43 @@
             <li class="ftr_item">
               <a class="ftr_sociallink" href="#">
                 <svg class="ftr_socicon" width="20" height="20" viewBox="0 0 20 20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="ftr_item">
               <a class="ftr_sociallink" href="#">
                 <svg class="ftr_socicon" width="20" height="20" viewBox="0 0 20 20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="ftr_item">
               <a class="ftr_sociallink" href="#">
                 <svg class="ftr_socicon" width="20" height="20" viewBox="0 0 20 20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="ftr_item">
               <a class="ftr_sociallink" href="#">
                 <svg class="ftr_socicon" width="20" height="20" viewBox="0 0 20 20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
+        </div>
+        <div class="item ftr_inmail">
+          <p class="ftr_text">Подпишитесь на рассылку</p>
+          <form class="ftr_form">
+            <input class="ftr_input" type="text" placeholder="E-mail" />
+            <button type="submit" class="ftr_inpbtn">
+              Подписаться<svg class="ftr_btnsend" width="24" height="24" viewBox="0 0 24 24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
