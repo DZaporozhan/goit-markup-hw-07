@@ -568,7 +568,7 @@ img {
 .icon-close {
   fill: currentColor;
 
-  transform: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close:hover .icon-close {
@@ -709,7 +709,7 @@ img {
 .inp_checkbox:checked ~ .icon_checkbox {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url(/images/icon_check.svg);
+  background-image: url(../images/icon_check.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: border-box;
