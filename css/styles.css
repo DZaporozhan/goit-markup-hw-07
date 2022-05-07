@@ -38,7 +38,6 @@ body {
 }
 
 button {
-  border: none;
 }
 
 img {
@@ -91,6 +90,7 @@ img {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   color: var(--white-color);
 }
 
@@ -139,7 +139,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-nav__item:not(:first-child) {
+.header-nav__item--append {
   margin-left: 50px;
 }
 
@@ -188,7 +188,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.contact-list__item:not(:first-child) {
+.contact-list__item--append {
   margin-left: 50px;
 }
 
@@ -238,10 +238,7 @@ img {
     url(../images/banner.jpg);
   background-repeat: no-repeat;
 }
-.banner {
-  margin-bottom: 30px;
-  margin-top: 0;
-}
+
 .banner__tittle {
   font-weight: 900;
   font-size: 44px;
@@ -249,11 +246,13 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--baner-tittle-color);
+
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
-.banner-btn {
+.banner__btn {
   background-color: var(--accent-color);
-
   color: var(--baner-tittle-color);
 
   padding-top: 10px;
@@ -262,7 +261,7 @@ img {
   padding-left: 32px;
 }
 
-.banner-btn:active {
+.banner__btn:active {
   background-color: var(--btn-click-color);
 }
 
@@ -282,7 +281,7 @@ img {
   width: 270px;
 }
 
-.pec-post__item:not(:first-child) {
+.pec-post__item--append {
   margin-left: 30px;
 }
 
@@ -332,7 +331,7 @@ img {
   padding-left: 0;
 }
 
-.work__item:not(:first-child) {
+.work__item--append {
   margin-left: 30px;
 }
 
@@ -387,7 +386,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.pers-cart__item:not(:first-child) {
+.pers-cart__item--append {
   margin-left: 30px;
 }
 
@@ -436,7 +435,7 @@ img {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.pers-social__link:not(:first-child) {
+.pers-social__link--append {
   margin-left: 10px;
 }
 .pers-social__link:hover,
@@ -466,7 +465,7 @@ img {
   margin: 0;
   padding-left: 0;
 }
-.client-post__item:not(:first-child) {
+.client-post__item--append {
   margin-left: 30px;
 }
 .client-post__item {

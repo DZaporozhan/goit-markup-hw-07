@@ -30,10 +30,10 @@
             <li class="header-nav__item">
               <a href="./index.html" class="header-nav__link header-nav__link--active">Студия</a>
             </li>
-            <li class="header-nav__item">
+            <li class="header-nav__item header-nav__item--append">
               <a href="./portfolio.html" class="header-nav__link">Портфолио</a>
             </li>
-            <li class="header-nav__item">
+            <li class="header-nav__item header-nav__item--append">
               <a href="#" class="header-nav__link">Контакты</a>
             </li>
           </ul>
@@ -46,7 +46,7 @@
               >info@devstudio.com</a
             >
           </li>
-          <li class="contact-list__item">
+          <li class="contact-list__item contact-list__item--append">
             <a href="tel:+380961111111" class="contact-list__link"
               ><svg class="contact_list__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use></svg
@@ -61,11 +61,11 @@
       <!-- Банер -->
       <section class="section section-banner">
         <div class="container">
-          <h1 class="banner tittle banner__tittle">
+          <h1 class="tittle banner__tittle">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button banner-btn" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button banner__btn" data-modal-open>Заказать услугу</button>
           <!-- Backdrop -->
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
@@ -135,7 +135,7 @@
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="pec-post__item">
+            <li class="pec-post__item pec-post__item--append">
               <div class="pec-box">
                 <svg class="pec-box__icon">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -146,7 +146,7 @@
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="pec-post__item">
+            <li class="pec-post__item pec-post__item--append">
               <div class="pec-box">
                 <svg class="pec-box__icon">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -157,7 +157,7 @@
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="pec-post__item">
+            <li class="pec-post__item pec-post__item--append">
               <div class="pec-box">
                 <svg class="pec-box__icon">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -184,7 +184,7 @@
                 </div>
               </div>
             </li>
-            <li class="work__item">
+            <li class="work__item work__item--append">
               <div class="work-box">
                 <img src="images/box2.jpg" alt="Разработка" width="370" />
                 <div class="box-label">
@@ -192,7 +192,7 @@
                 </div>
               </div>
             </li>
-            <li class="work__item">
+            <li class="work__item work__item--append">
               <div class="work-box">
                 <img src="images/box3.jpg" alt="Разработка" width="370" />
                 <div class="box-label">
@@ -222,21 +222,21 @@
                     </a>
                   </li>
                   <li>
-                    <a class="pers-social__link" href="#">
+                    <a class="pers-social__link pers-social__link--append" href="#">
                       <svg class="pers-social__icon" width="20" height="20" viewBox="0 0 20 20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a class="pers-social__link" href="#">
+                    <a class="pers-social__link pers-social__link--append" href="#">
                       <svg class="pers-social__icon" width="20" height="20" viewBox="0 0 20 20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a class="pers-social__link" href="#">
+                    <a class="pers-social__link pers-social__link--append" href="#">
                       <svg class="pers-social__icon" width="20" height="20" viewBox="0 0 20 20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -245,7 +245,7 @@
                 </ul>
               </div>
             </li>
-            <li class="pers-cart__item">
+            <li class="pers-cart__item pers-cart__item--append">
               <img class="photo" src="images/per2.jpg" alt="Ольга Репина" width="270" />
               <div class="pers-label">
                 <h3 class="tittle pers-label__name">Ольга Репина</h3>
@@ -259,21 +259,21 @@
                     </a>
                   </li>
                   <li>
-                    <a class="pers-social__link" href="#">
+                    <a class="pers-social__link pers-social__link--append" href="#">
                       <svg class="pers-social__icon" width="20" height="20" viewBox="0 0 20 20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a class="pers-social__link" href="#">
+                    <a class="pers-social__link pers-social__link--append" href="#">
                       <svg class="pers-social__icon" width="20" height="20" viewBox="0 0 20 20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a class="pers-social__link" href="#">
+                    <a class="pers-social__link pers-social__link--append" href="#">
                       <svg class="pers-social__icon" width="20" height="20" viewBox="0 0 20 20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -282,7 +282,7 @@
                 </ul>
               </div>
             </li>
-            <li class="pers-cart__item">
+            <li class="pers-cart__item pers-cart__item--append">
               <img class="photo" src="images/per3.jpg" alt="Николай Тарасов" width="270" />
               <div class="pers-label">
                 <h3 class="tittle pers-label__name">Николай Тарасов</h3>
@@ -296,21 +296,21 @@
                     </a>
                   </li>
                   <li>
-                    <a class="pers-social__link" href="#">
+                    <a class="pers-social__link pers-social__link--append" href="#">
                       <svg class="pers-social__icon" width="20" height="20" viewBox="0 0 20 20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a class="pers-social__link" href="#">
+                    <a class="pers-social__link pers-social__link--append" href="#">
                       <svg class="pers-social__icon" width="20" height="20" viewBox="0 0 20 20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a class="pers-social__link" href="#">
+                    <a class="pers-social__link pers-social__link--append" href="#">
                       <svg class="pers-social__icon" width="20" height="20" viewBox="0 0 20 20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -319,7 +319,7 @@
                 </ul>
               </div>
             </li>
-            <li class="pers-cart__item">
+            <li class="pers-cart__item pers-cart__item--append">
               <img class="photo" src="images/per4.jpg" alt="Михаил Ермаков" width="270" />
               <div class="pers-label">
                 <h3 class="tittle pers-label__name">Михаил Ермаков</h3>
@@ -333,21 +333,21 @@
                     </a>
                   </li>
                   <li>
-                    <a class="pers-social__link" href="#">
+                    <a class="pers-social__link pers-social__link--append" href="#">
                       <svg class="pers-social__icon" width="20" height="20" viewBox="0 0 20 20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a class="pers-social__link" href="#">
+                    <a class="pers-social__link pers-social__link--append" href="#">
                       <svg class="pers-social__icon" width="20" height="20" viewBox="0 0 20 20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a class="pers-social__link" href="#">
+                    <a class="pers-social__link pers-social__link--append" href="#">
                       <svg class="pers-social__icon" width="20" height="20" viewBox="0 0 20 20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -371,31 +371,31 @@
                 </svg>
               </a>
             </li>
-            <li class="client-post__item">
+            <li class="client-post__item client-post__item--append">
               <a class="client-post__link" href=""
                 ><svg class="client-post__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-client2"></use></svg
               ></a>
             </li>
-            <li class="client-post__item">
+            <li class="client-post__item client-post__item--append">
               <a class="client-post__link" href=""
                 ><svg class="client-post__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-client3"></use></svg
               ></a>
             </li>
-            <li class="client-post__item">
+            <li class="client-post__item client-post__item--append">
               <a class="client-post__link" href=""
                 ><svg class="client-post__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-client4"></use></svg
               ></a>
             </li>
-            <li class="client-post__item">
+            <li class="client-post__item client-post__item--append">
               <a class="client-post__link" href=""
                 ><svg class="client-post__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-client5"></use></svg
               ></a>
             </li>
-            <li class="client-post__item">
+            <li class="client-post__item client-post__item--append">
               <a class="client-post__link" href=""
                 ><svg class="client-post__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-client6"></use></svg
