@@ -59,7 +59,7 @@
     <!-- Основа сайта -->
     <main>
       <!-- Банер -->
-      <section class="section section-banner">
+      <section class="section banner">
         <div class="container">
           <h1 class="tittle banner__tittle">
             Эффективные решения <br />
@@ -407,60 +407,62 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer_box">
-        <div class="item ftr_address">
+      <div class="container footer-box">
+        <div class="footer-box__item footer-box__item--prepend">
           <a href="index.html" class="logo">Web<span class="logo_footer">Studio</span></a>
-          <address class="address">
-            <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list">
-              <li class="footer_contact">
-                <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          <address class="footer-address">
+            <p class="footer-address__text text">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="address-post list">
+              <li class="address-post__item address-post__item--prepend">
+                <a href="mailto:info@devstudio.com" class="address-post__link"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="footer_contact">
-                <a href="tel:+380961111111" class="link">+380961111111</a>
+              <li class="address-post__item">
+                <a href="tel:+380961111111" class="address-post__link">+380961111111</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="item">
-          <p class="ftr_text">ПРИСОЕДЕНЯЙТЕСЬ</p>
-          <ul class="ftr_soclist">
-            <li class="ftr_item">
-              <a class="ftr_sociallink" href="#">
-                <svg class="ftr_socicon" width="20" height="20" viewBox="0 0 20 20">
+        <div class="footer-box__item">
+          <p class="footer-box__tittle text">ПРИСОЕДЕНЯЙТЕСЬ</p>
+          <ul class="footer-soclist list">
+            <li class="footer-soclist__item footer-soclist__item--prepend">
+              <a class="footer-soclist__link" href="#">
+                <svg class="footer-soclist__icon" width="20" height="20" viewBox="0 0 20 20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="ftr_item">
-              <a class="ftr_sociallink" href="#">
-                <svg class="ftr_socicon" width="20" height="20" viewBox="0 0 20 20">
+            <li class="footer-soclist__item footer-soclist__item--prepend">
+              <a class="footer-soclist__link" href="#">
+                <svg class="footer-soclist__icon" width="20" height="20" viewBox="0 0 20 20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="ftr_item">
-              <a class="ftr_sociallink" href="#">
-                <svg class="ftr_socicon" width="20" height="20" viewBox="0 0 20 20">
+            <li class="footer-soclist__item footer-soclist__item--prepend">
+              <a class="footer-soclist__link" href="#">
+                <svg class="footer-soclist__icon" width="20" height="20" viewBox="0 0 20 20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="ftr_item">
-              <a class="ftr_sociallink" href="#">
-                <svg class="ftr_socicon" width="20" height="20" viewBox="0 0 20 20">
+            <li class="footer-soclist__item">
+              <a class="footer-soclist__link" href="#">
+                <svg class="footer-soclist__icon" width="20" height="20" viewBox="0 0 20 20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="item ftr_inmail">
-          <p class="ftr_text">Подпишитесь на рассылку</p>
-          <form class="ftr_form">
-            <input class="ftr_input" type="text" placeholder="E-mail" />
-            <button type="submit" class="ftr_inpbtn">
-              Подписаться<svg class="ftr_btnsend" width="24" height="24" viewBox="0 0 24 24">
+        <div class="footer-box__item footer-box__item--append">
+          <p class="footer-box__tittle text">Подпишитесь на рассылку</p>
+          <form class="footer-box__form">
+            <input class="footer-box__input" type="text" placeholder="E-mail" />
+            <button type="submit" class="footer-box__btn button">
+              Подписаться<svg class="btn__icon--append" width="24" height="24" viewBox="0 0 24 24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

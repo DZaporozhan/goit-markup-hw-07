@@ -37,9 +37,6 @@ body {
   font-family: 'Roboto', ssans-serif;
 }
 
-button {
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -101,6 +98,10 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+.list {
+  list-style: none;
 }
 
 /*------------- Header style------------- */
@@ -204,8 +205,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact_list__link:hover,
-.contact_list__link:focus {
+.contact-list__link:hover,
+.contact-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -216,15 +217,15 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact_list__icon:hover,
-.contact_list__icon:focus {
+.contact-list__icon:hover,
+.contact-list__icon:focus {
   fill: currentColor;
 }
 
 /*------------- Main style -------------*/
 
 /* -------------Section Banner------------- */
-.section-banner {
+.banner {
   background-color: var(--footer-bg-color);
   text-align: center;
   padding-top: 200px;
@@ -733,7 +734,7 @@ img {
   padding-bottom: 60px;
 }
 
-.footer_box {
+.footer-box {
   display: flex;
   align-items: baseline;
 }
@@ -742,28 +743,23 @@ img {
   color: var(--white-color);
 }
 
-.address {
+.footer-address {
   margin-top: 20px;
 }
 
-.address .list {
-  list-style: none;
-  margin: 0;
+.address-post {
   padding-left: 0;
 }
 
-.address .text {
+.footer-address__text {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--white-color);
-
   margin-top: 0;
   margin-bottom: 9px;
 }
 
-.address .link {
+.address-post__link {
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
@@ -774,34 +770,30 @@ img {
   margin-top: 0;
 }
 
-.footer_contact:first-child {
+.address-post__item--prepend {
   margin-top: 0;
   margin-bottom: 9px;
 }
 
-.ftr_address {
+.footer-box__item--prepend {
   margin-right: 70px;
 }
 
-.ftr_text {
+.footer-box__tittle {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
   margin-top: 0;
   margin-bottom: 20px;
 }
-.ftr_soclist {
+.footer-soclist {
   display: flex;
   text-align: center;
-  list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-.ftr_item {
+.footer-soclist__item {
   display: block;
   width: 44px;
   height: 44px;
@@ -812,32 +804,32 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ftr_sociallink {
+.footer-soclist__link {
   color: var(--white-color);
 }
 
-.ftr_socicon {
+.footer-soclist__icon {
   fill: currentColor;
 }
 
-.ftr_item:not(:last-child) {
+.footer-soclist__item--prepend {
   margin-right: 10px;
 }
 
-.ftr_item:hover,
-.ftr_item:focus {
+.footer-soclist__item:hover,
+.footer-soclist__item:focus {
   background-color: var(--accent-color);
 }
 
-.ftr_inmail {
-  margin-left: 93px;
+.footer-box__item--append {
+  margin-left: 90px;
 }
-.ftr_form {
+.footer-box__form {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
-.ftr_input {
+.footer-box__input {
   width: 358px;
   padding: 15px 16px;
 
@@ -849,25 +841,16 @@ img {
   color: var(--main-text-color);
 }
 
-.ftr_inpbtn {
+.footer-box__btn {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 12px;
   padding: 10px 29px;
-
   background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #ffffff;
 }
 
-.ftr_btnsend {
+.btn__icon--append {
   margin-left: 10px;
   width: 24px;
   height: 24px;
@@ -875,21 +858,20 @@ img {
 
 /* -------------------Portfolio style --------------------- */
 
-.pf_filter {
+.pf-filter {
   display: flex;
   justify-content: center;
 
-  list-style: none;
   margin-top: 0;
   margin-bottom: 50px;
   padding-left: 0;
 }
 
-.pf_filter .item + .item {
+.pf-filter__item--append {
   margin-left: 8px;
 }
 
-.pf_filter .btn {
+.pf-filter__btn {
   background-color: var(--btn-bg-color);
   border-radius: 4px;
 
@@ -909,15 +891,15 @@ img {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pf_filter .btn:hover,
-.pf_filter .btn:focus {
+.pf-filter__btn:hover,
+.pf-filter__btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.pf_list {
+.product-cart__wraper {
   display: flex;
   flex-wrap: wrap;
 
@@ -926,17 +908,17 @@ img {
   padding: 0;
 }
 
-.pf_cart {
+.product-cart {
   width: 370px;
   margin: 15px;
 }
 
-.product_thumb {
+.cart-header {
   position: relative;
   overflow: hidden;
 }
 
-.product_overlay {
+.product-cart__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -955,7 +937,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product_overlay .text {
+.cart-header__text {
   margin: 0;
   font-weight: 400;
   font-size: 18px;
@@ -964,10 +946,10 @@ img {
 
   color: var(--white-color);
 }
-.pf_cart:hover .product_overlay {
+.product-cart:hover .product-cart__overlay {
   transform: translateY(0);
 }
-.cart_text {
+.cart-footer {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -977,11 +959,15 @@ img {
   padding-left: 24px;
 }
 
-.pf_cart .pf_link {
+.product-cart__link {
+  display: block;
+
   text-decoration: none;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pf_cart .name {
+.cart-footer__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -991,7 +977,7 @@ img {
   margin-bottom: 4px;
 }
 
-.pf_cart .products {
+.cart-footer__products {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -1000,14 +986,8 @@ img {
   margin-bottom: 0;
 }
 
-.pf_link {
-  display: block;
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.pf_link:hover,
-.pf_link:focus {
+.product-cart__link:hover,
+.product-cart__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
