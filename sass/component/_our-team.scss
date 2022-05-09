@@ -71,20 +71,24 @@
   color: #afb1b8;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus 
+    background-color: var(--accent-color);
+    
+  &:hover .pers-social__icon,
+  &:focus .pers-social__icon 
+    fill: #ffffff;
 }
 .pers-social__link--append {
   margin-left: 10px;
 }
-.pers-social__link:hover,
-.pers-social__link:focus {
-  background-color: var(--accent-color);
-}
+
+
 .pers-social__icon {
   fill: currentColor;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.pers-social__link:hover .pers-social__icon,
-.pers-social__link:focus .pers-social__icon {
-  fill: #ffffff;
-}
+
+
