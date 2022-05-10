@@ -86,12 +86,13 @@
   transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus ~ .form-icon,
-  &:hover ~ .form-icon 
+  &:hover ~ .form-icon {
     fill: var(--accent-color);
-  
+  }
   &:focus,
-  &:hover
+  &:hover {
     border-color: var(--main-logo-color);
+  }
 }
 
 .form_comment {
@@ -111,8 +112,9 @@
   transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
-  &:hover 
+  &:hover {
     border-color: var(--main-logo-color);
+  }
 }
 
 .form-icon {
@@ -151,13 +153,14 @@
 
   position: absolute;
 
-  &:checked ~ .icon_checkbox 
+  &:checked ~ .icon_checkbox {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
     background-image: url(../images/icon_check.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: border-box;
+  }
 }
 
 .icon_checkbox {
@@ -170,7 +173,6 @@
   border: 2px solid var(--title-text-color);
   border-radius: 4px;
 }
-
 
 .order_check .link {
   margin-left: 5px;

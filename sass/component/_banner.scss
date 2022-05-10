@@ -34,11 +34,8 @@
   padding-bottom: 10px;
   padding-left: 32px;
 
-  &:active 
+  &:active {
     background-color: var(--btn-click-color);
-  
+  }
 }
 
-// .banner__btn:active {
-//   background-color: var(--btn-click-color);
-// }

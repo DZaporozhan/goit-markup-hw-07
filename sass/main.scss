@@ -1,17 +1,18 @@
-//Vars
+//Utils
 @import './utils/vars';
+@import './utils/hidden';
+@import './utils/variables';
 //Basic
-@import './component/body';
-@import './component/section';
-@import './component/container';
-@import './component/hidden';
-@import './component/tittle';
-@import './component/text';
-@import './component/button';
-@import './component/list';
-@import './component/backdrop';
-@import './component/modal';
-@import './component/logo';
+@import './base/body';
+@import './base/section';
+@import './base/container';
+@import './base/tittle';
+@import './base/text';
+@import './base/button';
+@import './base/list';
+@import './base/backdrop';
+@import './base/modal';
+@import './base/logo';
 //Bloks
 @import './component/header';
 @import './component/banner';
